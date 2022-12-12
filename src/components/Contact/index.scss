@@ -2,10 +2,13 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(237, 236, 236, 0.489);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contactformdiv{
     width: 600px;
+    margin-right: 0;
     height: 100vh;
     display: flex;
    flex-direction: column;
@@ -68,7 +71,6 @@ background-color: rgba(235, 234, 234, 0.39);
     padding: 10px;
 }
 .infocontactdiv{
-    // background-color: red;
    width: 100%;
    text-align: center;
 }
@@ -76,4 +78,60 @@ background-color: rgba(235, 234, 234, 0.39);
     font-family:cursive;
     font-size: 15px;
     margin: 0px;
+}
+.maincontactinfodiv{
+    height: 100vh;
+}
+.mainmapdiv{
+    display: flex;
+   justify-content: center;
+align-items: center;
+    flex-direction: column;
+}
+.maps{
+    border-radius: 5px;
+    height: 500px;
+    width: 600px;
+    border: none;
+  box-shadow: 0 8px 32px 0 rgba(141, 140, 140, 0.37);
+}
+.infomapsdiv p{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 400px){
+
+
+    .contactformdiv{
+        width: 300px;
+    }
+    .contactformdiv form{
+  width: 280px;
+  height: 100%;
+    }
+    .mainmapdiv{
+        width: 100%;
+    }
+    .maps{
+        width: 300px;
+        height: 400px;
+    }
+   .maincontactinfodiv{  
+    background-color: white;
+    margin-right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .infocontactdiv{
+    margin: 10px;
+   }
 }

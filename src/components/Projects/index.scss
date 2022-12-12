@@ -24,7 +24,7 @@
 .mainprojcard {
   margin: 6px;
   width: 250px;
-  height: 400px;
+  height: 430px;
   display: flex;
   flex-direction: column;
   border-radius: 30px;
@@ -43,17 +43,6 @@
   // margin-top: 20px;
   transform: scale(1.03);
 
-}
-.imgdivproj {
-  background-image: url('../../assets/images/mainback.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 200px;
-  margin-top: 20px;
-  border-radius: 10px;
-
-  height: 100px;
-  transition: all 1s;
 }
 .infodivproj {
   margin-top: 0px;
@@ -95,4 +84,20 @@
   text-decoration: none;
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.imgdivproj{
+  margin: 5px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+.imgdivproj img{
+margin-top: 20px;
+width: 220px;
+height: 130px;
+border-radius: 10px;
+border: 2px solid rgb(0, 0, 0);
+padding: 2px;
 }

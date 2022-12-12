@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Plogo from '../../assets/images/letter-p.png'
 import Linkedin from '../../assets/images/linkedin.png'
 import Projects from '../../assets/images/analytics.png'
-import Menubar from '../../assets/images/menu-bar.png'
+import Menubar from '../../assets/images/menu1.png'
 import Sidebar from '../Sidebar'
 export default function Home() {
   const [toggle, setToggle] = useState(false)
@@ -33,7 +33,9 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="controlidivli">
+                    <a href="www.linkedin.com/in/adish-kerkar-568482223">
                     <img src={Linkedin} alt="linkedin" width={'25px'} />
+                    </a>
                     <p>Linkedin</p> 
                   </div>
                 </li>

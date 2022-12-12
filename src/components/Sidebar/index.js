@@ -32,7 +32,7 @@ const Sidebar = () => {
             <img src={Instagram} alt="" srcset="" width={'18px'}/>
           </a></li>    
           <li>
-            <a href="https://www.instagram.com/
+            <a href="www.linkedin.com/in/adish-kerkar-568482223
             ">
               <img src={Linkedin} alt="" srcset="" width={'18px'}/>
             </a>
