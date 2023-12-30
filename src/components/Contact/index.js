@@ -15,13 +15,14 @@ function Contact() {
 
     emailjs
       .sendForm(
-        'service_ofe26wn',
+        'service_iz4y286',
         'template_lfn6sn8',
         form.current,
         'C3v6aK-Dp1nXtNA6C'
       )
       .then(
         (result) => {
+          alert(`your message has been sent succesfully`)
           console.log(result.text)
         },
         (error) => {
@@ -32,9 +33,7 @@ function Contact() {
 
   const stylesend = {
     width: '180px',
-    backgroundColor: 'black',
     fontSize: '15px',
-    color: 'white',
     fontFamily:
       " system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
   }
@@ -47,6 +46,11 @@ function Contact() {
   })
 
   return (
+ 
+
+
+
+  
     <div className="FullContactdiv">
       <div className="sidebardiv">
         <div className="menubardiv" onClick={() => setToggle(!toggle)}>
@@ -67,12 +71,14 @@ function Contact() {
               type="text"
               name="user_name"
               placeholder="Entere your name here"
+              required
             />
             <label>Email</label>
             <input
               type="email"
               name="user_email"
               placeholder="Enter your email here"
+              required
             />
             <label>Message</label>
             <textarea
@@ -80,7 +86,8 @@ function Contact() {
               className="inputmsg"
               placeholder="Write a message"
             />
-            <input type="submit" value="Send" style={stylesend} />
+         
+            <input type="submit" value="Send" style={stylesend} id='sendmsgbtn' />
           </form>
         </div>
       </div>
@@ -93,6 +100,7 @@ function Contact() {
         </div>
 
     </div>
+   
   )
 }
 

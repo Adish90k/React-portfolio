@@ -1,4 +1,4 @@
-// @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Mulish:wght@200&display=swap'); 
 .mainaboutcontainer{
   width: 100vw;
@@ -26,22 +26,27 @@
 .mainallcontentdiv .contenaboutdiv h1,h3{
   width: 100%;
   text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
+  // font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .mainallcontentdiv .contenaboutdiv h1{
-  font-size: 35px;
+  font-size: 33px;
   font-family: 'Montserrat', sans-serif;
+  // font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   // background-color: blanchedalmond;
 }
 .mainallcontentdiv .contenaboutdiv h3{
-  font-size: 24px;
+  font-size: 20px;
   font-family: 'Montserrat', sans-serif;
+  // font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: rgb(0, 126, 176);
 }
 .mainallcontentdiv .contenaboutdiv p{
   width: 50%;
   margin: 6px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+
+  // font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
 }
 .contenaboutdiv h2{
@@ -52,19 +57,22 @@
   // font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .contenaboutdiv .skillsaboutdiv{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+ display: flex;
+ margin: 4px;
+ flex-wrap: wrap; 
+ justify-content: center;
+ width: 95%;
 }
 .contenaboutdiv .skillsaboutdiv li{
   list-style: none;
-  margin: 10px;
+  margin: 3px;
   background-color: rgba(0, 0, 0, 0.144);
   border-radius: 5px;
   padding: 8px;
+  font-size: 0.9em;
   color: rgb(66, 70, 66);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  // font-family: Arial, Helvetica, sans-serif;
 }
 .contenaboutdiv .sociallinks{
   display: flex;
@@ -76,6 +84,7 @@ margin: 10px;
 display: flex;
 align-items: center;
 justify-content: center;
+cursor: pointer;
 // background-color: black;
 }
 .contenaboutdiv .sociallinks li img{
@@ -90,7 +99,7 @@ border-radius: 50%;
 display: flex;
 align-items: center;
 justify-content: center;
-height: 190px;
+height: 180px;
 width: 190px;
 }
 .contenaboutdiv .imgaboutdiv img{
@@ -102,18 +111,15 @@ width: 190px;
   width: 30px;
 background-color: black;
 }
-@media only screen and (max-width: 600px){
 
-  .contenaboutdiv .skillsaboutdiv li{
-    margin: 4px;
-  }
+@media only screen and (max-width: 800px){
   .mainallcontentdiv .contenaboutdiv p{
     font-size: 10px;
     width: 90%;
   }
   .mainallcontentdiv{
   width: 80%;
-  height: 90%;
+  
   }
   .contenaboutdiv .imgaboutdiv img{
   width: 140px;
@@ -121,9 +127,47 @@ background-color: black;
   margin-top: -20px;
   }
   .mainallcontentdiv .contenaboutdiv h1{
-    font-size: 28px;
+    font-size: 25px;
+    // margin-top: 20px;
   }
   .mainallcontentdiv .contenaboutdiv h3{
-    font-size: 18px;
+    font-size: 15px;
   }
+  
+.contenaboutdiv h2{
+  margin: 6px;
+  font-size: 15px;
+}
+.contenaboutdiv .skillsaboutdiv li{
+  font-size: 8.5px;
+  display: flex;
+  align-items: center;
+}
+.contenaboutdiv .skillsaboutdiv{
+  display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+width: 80%;
+margin: 0px;
+}
+}
+
+
+
+.aboutskillsubdiv{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.aboutskillsubdiv p{ 
+  display: none;
+  color: white;
+}
+
+.aboutskillsubdiv:hover .percentxt{
+display: block;
+
 }

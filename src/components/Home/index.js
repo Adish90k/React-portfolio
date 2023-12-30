@@ -5,6 +5,7 @@ import Linkedin from '../../assets/images/linkedin.png'
 import Projects from '../../assets/images/analytics.png'
 import Menubar from '../../assets/images/menu1.png'
 import Sidebar from '../Sidebar'
+import { Link } from 'react-router-dom';
 export default function Home() {
   const [toggle, setToggle] = useState(false)
   return (
@@ -26,18 +27,18 @@ export default function Home() {
             <div className="ultags">
               <ul>
                 <li>
+                <Link to="/projects" className='mainhomenavlinks'>
                   <div className="controlidivli">
-                    <img src={Projects} alt="projectlogo" width={'25px'} />
-                    <p>Projects</p>
-                  </div>
+                      <img src={Projects} alt="projectlogo" width={'25px'} />
+                    <p>Projects</p> 
+                  </div>  </Link>
                 </li>
                 <li>
+                <a href="https://www.linkedin.com/in/adish-kerkar-568482223" className='mainhomenavlinks'>
                   <div className="controlidivli">
-                    <a href="www.linkedin.com/in/adish-kerkar-568482223">
                     <img src={Linkedin} alt="linkedin" width={'25px'} />
-                    </a>
                     <p>Linkedin</p> 
-                  </div>
+                  </div> </a>
                 </li>
               </ul>
             </div>
@@ -52,9 +53,11 @@ export default function Home() {
             <p>Hello My,</p>
             <p> name is Adish</p>
             <p>i am a Web</p>
-            <h1>Designer</h1>
+            <h1>Developer</h1>
             <div className="nextbuttondiv">
+              <Link to="/about">
               <button type="button">Next</button>
+              </Link>
             </div>
           </div>
         </div>

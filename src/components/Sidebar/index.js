@@ -28,11 +28,11 @@ const Sidebar = () => {
           </Link>
         </ul>
         <ul className='ullinks'>
-      <li><a href="https://www.instagram.com/">
+      <li><a href="https://www.instagram.com/adish_kerkar/">
             <img src={Instagram} alt="" srcset="" width={'18px'}/>
           </a></li>    
           <li>
-            <a href="www.linkedin.com/in/adish-kerkar-568482223
+            <a href="https://www.linkedin.com/in/adish-kerkar-568482223
             ">
               <img src={Linkedin} alt="" srcset="" width={'18px'}/>
             </a>
