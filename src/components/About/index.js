@@ -29,7 +29,7 @@ function About() {
             <h1>Adish Kerkar</h1>
              <h3>Web Developer</h3>
             <p>
-              Hi i am adish a second year student at NIT K surathkal pursing
+              Hi i am adish a third year student at NIT K surathkal pursing
               btech in information technology, i am interested in web
               development and contributing to open source
             </p>
