@@ -96,7 +96,7 @@ function Contact() {
           <div className="infomapsdiv">
           <p>Checkout my location here </p>
           </div>
-          <iframe id="iframeId" className='maps'></iframe>
+          <iframe id="iframeId" className='maps' title="Contact Form"></iframe>
         </div>
 
     </div>
